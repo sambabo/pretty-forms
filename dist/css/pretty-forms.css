@@ -1,0 +1,19 @@
+.switch {
+	height: 50px;
+	width: 100px;
+	background-color: #ddd;
+	border-radius: 30px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0 2px;
+}
+.switch input {
+	display: none;
+}
+.switch .slider {
+	background-color: #fff;
+	border-radius: 100px;
+	height: 46px;
+	width: 46px;
+}
