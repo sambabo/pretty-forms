@@ -33,7 +33,7 @@
 	display: none;
 }
 .radio span{
-	display: inline-block; 
+	display: inline-flex; 
 	width: 30px;
 	height:30px;
 	position: relative;
@@ -54,10 +54,8 @@
 	transform: translate(-50%,-50%) scale(0); 
 	transition: 300ms ease-in-out 0s;
 }
-.radio input:checked ~ span {
-	background-color: #00FFFF;
 
-}
-.radio input:checked ~ span::before{
+
+.radio input:checked + span::before{
 	transform: translate(-50%,-50%) scale(1);
 }
