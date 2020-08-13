@@ -26,12 +26,38 @@
 	transform: translateX(calc(100px - 46px));
 }
 
+/* RADIO SECTION */
 
 /* RADIO */
-.radio span {
-	
+.radio input {
+	display: none;
+}
+.radio span{
+	display: inline-block; 
+	width: 30px;
+	height:30px;
+	position: relative;
+	background: #ddd;
+	border: 3px solid #00FFFF;
+	border-radius: 50%;
 }
 
-.radio span::before {
-	
+.radio span::before{
+	background: #00FFFF;
+	content: "";
+	width: 20px;
+	height:20px;
+	position: absolute;
+	border-radius: 50%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%) scale(0); 
+	transition: 300ms ease-in-out 0s;
+}
+.radio input:checked ~ span {
+	background-color: #00FFFF;
+
+}
+.radio input:checked ~ span::before{
+	transform: translate(-50%,-50%) scale(1);
 }
