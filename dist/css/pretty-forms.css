@@ -25,3 +25,13 @@
 .switch input:checked ~ span::before {
 	transform: translateX(calc(100px - 46px));
 }
+
+
+/* RADIO */
+.radio {
+	
+}
+
+.radio::before {
+	
+}
